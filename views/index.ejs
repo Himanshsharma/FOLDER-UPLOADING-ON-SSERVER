@@ -1,0 +1,30 @@
+<html>
+
+    <body>
+
+        <% if (fileUploaded){ %>
+        File Uploaded
+        <% } %>
+        <h1>Single File Upload</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" />
+        </form>
+
+        <h1>Multiple File Upload</h1>
+        <form method="post" enctype="multipart/form-data" action="multiple">
+            <input type="file" name="file" multiple />
+            <input type="submit" />
+        </form>
+
+        <h1>Many File Upload</h1>
+        <form method="post" enctype="multipart/form-data" action="multiple">
+            <input type="file" name="file" />
+            <input type="file" name="file" />
+            <input type="file" name="file" />
+            <input type="submit" />
+        </form>
+
+    </body>
+
+</html>
